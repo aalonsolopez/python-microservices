@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from typing import List
 from sqlalchemy.orm import Session
-import requests  # Se reemplaza httpx por requests
+import requests
 
 from app.db.session import get_db
 from app.core.config import settings
