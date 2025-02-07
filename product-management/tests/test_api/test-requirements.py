@@ -9,8 +9,6 @@ BASE_URL = "http://localhost:8000/api/v1/products"
 def prepare_test():
     Base.metadata.create_all(bind=engine)
 
-    ini
-
 def test_list_products():
     response = requests.get(BASE_URL)
     assert response.status_code == 200
